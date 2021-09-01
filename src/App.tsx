@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const VERSION: string = "0.0.0";
+
 function App() {
   return (
     <div className="App">
@@ -9,6 +11,7 @@ function App() {
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
+          Version {VERSION}
         </p>
         <a
           className="App-link"
