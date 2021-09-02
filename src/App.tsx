@@ -1,8 +1,9 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import SubwayPath from './components/SubwayPath';
 
-const VERSION: string = "0.0.0";
+const VERSION: string = "0.0.1";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <SubwayPath
+        color={"red"}
+      />
     </div>
   );
 }

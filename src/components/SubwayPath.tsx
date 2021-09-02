@@ -1,12 +1,22 @@
-import React, { FunctionComponent } from "react";
+import React from "react";
 
-function SubwayPath(fn: () => FunctionComponent) {
+type SubwayPathProps = {
+  color: string,
+}
+
+function SubwayPath({color}: SubwayPathProps) {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg"
-     width="11.4967in" height="8.14333in"
-     viewBox="0 0 3449 2443">
-  <path id="Asakusa Line Full"
-        fill="none" stroke="black" stroke-width="1"
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="11.4967in"
+      height="8.14333in"
+      viewBox="0 0 3449 2443"
+    >
+      <path
+        id="Asakusa Line Full"
+        fill="none"
+        stroke={color}
+        stroke-width="20"
         d="M 1100.50,601.94
            C 1100.50,601.94 1589.18,604.28 1589.18,604.28
              1589.18,604.28 1604.00,604.60 1618.41,618.31
@@ -34,7 +44,10 @@ function SubwayPath(fn: () => FunctionComponent) {
              1139.08,1368.87 1118.88,1369.46 1107.51,1359.52
              1089.19,1343.52 1018.66,1273.01 1018.66,1273.01
              1018.66,1273.01 1008.79,1264.25 988.26,1262.49
-             967.74,1260.72 40.12,1260.15 40.12,1260.15M 1126.22,1367.70" />
+             967.74,1260.72 40.12,1260.15 40.12,1260.15M 1126.22,1367.70"
+        />
       </svg>
     )
 }
+
+export default SubwayPath;
