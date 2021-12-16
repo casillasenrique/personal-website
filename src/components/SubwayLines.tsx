@@ -1,10 +1,10 @@
-import React, { FunctionComponent } from 'react';
-import { SubwayPath } from './SubwayPath';
-import './Background.css';
+import React from 'react';
+import SubwayPath from './SubwayPath';
+import './SubwayLines.css';
 
-export const Background: FunctionComponent = () => {
+const SubwayLines = () => {
   return (
-    <div className="Background-container">
+    <div className="SubwayLines-container">
       <SubwayPath
         name="Fukutoshin Line"
         color="#aa5f33"
@@ -334,3 +334,5 @@ export const Background: FunctionComponent = () => {
     </div>
   );
 };
+
+export default SubwayLines;

@@ -9,7 +9,7 @@ type SubwayPathProps = {
   data: string;
 };
 
-export const SubwayPath: FunctionComponent<SubwayPathProps> = ({
+const SubwayPath: FunctionComponent<SubwayPathProps> = ({
   name,
   color,
   data,
@@ -43,3 +43,5 @@ export const SubwayPath: FunctionComponent<SubwayPathProps> = ({
     </div>
   );
 };
+
+export default SubwayPath;

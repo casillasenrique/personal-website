@@ -1,0 +1,9 @@
+.SubwayLines-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  -webkit-filter: blur(4px);
+  filter: blur(4px);
+}

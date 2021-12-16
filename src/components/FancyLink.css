@@ -1,0 +1,62 @@
+.FancyLink {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+  text-decoration: none;
+  gap: 1em;
+  font-size: 1.3em;
+}
+
+.FancyLink-label {
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  position: relative;
+}
+
+.FancyLink-label::before,
+.FancyLink-label::after {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: currentColor;
+  top: 100%;
+  left: 0;
+  pointer-events: none;
+}
+
+.FancyLink-label::before {
+  content: '';
+}
+
+.FancyLink-label-underline::before {
+  transform-origin: 100% 50%;
+  transform: scale3d(0, 1, 1);
+  transition: transform 0.2s;
+}
+
+.FancyLink-label-underline:hover::before {
+  transform-origin: 0% 50%;
+  transform: scale3d(1, 1, 1);
+}
+
+.FancyLink img {
+  width: 1.5em;
+  -webkit-filter: invert(85%);
+  filter: invert(85%);
+  -webkit-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+}
+
+.FancyLink:hover img {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+  transform: scale(1.1, 1.1);
+}
+
+@media (max-width: 500px) {
+  .FancyLink-label {
+    display: none;
+  }
+}
