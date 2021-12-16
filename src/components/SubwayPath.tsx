@@ -1,27 +1,48 @@
-import React from "react";
+import React, { FunctionComponent, useState } from "react";
+import "./SubwayPath.css"
+
+import { useSpring, animated, config } from "react-spring"
 
 type SubwayPathProps = {
+  name: string,
   color: string,
   data: string,
 }
 
-function SubwayPath({color, data}: SubwayPathProps) {
-  return (
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      width="11.4967in"
-      height="8.14333in"
-      viewBox="0 0 3449 2443"
-    >
-      <path
-        id="Asakusa Line Full"
-        fill="none"
-        stroke={color}
-        stroke-width="20"
-        d={data}
-        />
-      </svg>
-    )
-}
+export const SubwayPath: FunctionComponent<SubwayPathProps> = (
+  { name, color, data }
+) => {
 
-export default SubwayPath;
+  const [path_color, set_color] = useState(color)
+  const [clear, set_clear] = useState(false)
+  const { x } = useSpring({
+    reset: true,
+    from: { x: 0 },
+    x: 1,
+    delay: 20,
+    config: {
+      duration: 5000,
+    },
+  })
+
+  return (
+    <div
+      className="SubwayPath-container"
+    >
+      <animated.svg
+        viewBox="0 0 3449 2443"
+        strokeDasharray={10000}
+        strokeDashoffset={x.to(x => (1 - x) * 10000)}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        stroke={path_color}
+        strokeWidth="20"
+        fill="none"
+      >
+        <path
+          d={data}
+        />
+      </animated.svg>
+    </div>
+  )
+}
