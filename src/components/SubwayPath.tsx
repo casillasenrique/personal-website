@@ -1,20 +1,21 @@
-import React, { FunctionComponent, useState } from "react";
-import "./SubwayPath.css"
+import React, { FunctionComponent, useState } from 'react';
+import './SubwayPath.css';
 
-import { useSpring, animated, config } from "react-spring"
+import { useSpring, animated, config } from 'react-spring';
 
 type SubwayPathProps = {
-  name: string,
-  color: string,
-  data: string,
-}
+  name: string;
+  color: string;
+  data: string;
+};
 
-export const SubwayPath: FunctionComponent<SubwayPathProps> = (
-  { name, color, data }
-) => {
-
-  const [path_color, set_color] = useState(color)
-  const [clear, set_clear] = useState(false)
+export const SubwayPath: FunctionComponent<SubwayPathProps> = ({
+  name,
+  color,
+  data,
+}) => {
+  const [path_color, set_color] = useState(color);
+  const [clear, set_clear] = useState(false);
   const { x } = useSpring({
     reset: true,
     from: { x: 0 },
@@ -23,26 +24,22 @@ export const SubwayPath: FunctionComponent<SubwayPathProps> = (
     config: {
       duration: 5000,
     },
-  })
+  });
 
   return (
-    <div
-      className="SubwayPath-container"
-    >
+    <div className="SubwayPath-container">
       <animated.svg
         viewBox="0 0 3449 2443"
         strokeDasharray={10000}
-        strokeDashoffset={x.to(x => (1 - x) * 10000)}
+        strokeDashoffset={x.to((x) => (1 - x) * 10000)}
         strokeLinecap="round"
         strokeLinejoin="round"
         stroke={path_color}
         strokeWidth="20"
         fill="none"
       >
-        <path
-          d={data}
-        />
+        <path d={data} />
       </animated.svg>
     </div>
-  )
-}
+  );
+};
