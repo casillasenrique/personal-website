@@ -3,7 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import { Background } from './components/Background';
 
-const VERSION: string = "0.0.3";
+const VERSION: string = "0.1.0";
 
 function App() {
   return (
