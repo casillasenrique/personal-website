@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 import FrontPage from './pages/FrontPage';
 
-const VERSION: string = '0.1.0';
+const VERSION: string = '0.2.0';
 
 function App() {
   return (
