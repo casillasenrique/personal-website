@@ -1,6 +1,8 @@
 import React from 'react';
 import SubwayLines from '../components/SubwayLines';
 import SocialsCard from '../components/SocialsCard';
+import Navbar from '../components/Navbar';
+import AboutMe from '../components/AboutMe';
 import './FrontPage.css';
 
 const FrontPage = ({ version }: { version: string }) => {
@@ -18,6 +20,8 @@ const FrontPage = ({ version }: { version: string }) => {
             v{version}
           </a>
         </h1>
+        <Navbar />
+        <AboutMe />
         <SocialsCard />
       </div>
     </div>
