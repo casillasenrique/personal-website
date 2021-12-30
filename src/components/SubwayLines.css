@@ -1,9 +1,7 @@
 .SubwayLines-container {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
+  width: 100%;
   -webkit-filter: blur(4px);
   filter: blur(4px);
+
+  /* TODO, make subway lines fixed */
 }
