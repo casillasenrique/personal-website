@@ -14,19 +14,19 @@ const Navbar = () => {
       />
       <FancyLink
         iconSrc={`${iconPath}info-circle-fill.svg`}
-        to="#"
+        to="#about"
         label="About"
         alt="icon"
       />
       <FancyLink
         iconSrc={`${iconPath}code-slash.svg`}
-        to="#"
+        to="#projects"
         label="Projects"
         alt="icon"
       />
       <FancyLink
         iconSrc={`${iconPath}envelope-fill.svg`}
-        to="#"
+        to="#socials"
         label="Socials"
         alt="icon"
       />
