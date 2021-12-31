@@ -1,7 +1,7 @@
 import React, { FunctionComponent, useState } from 'react';
 import './SubwayPath.css';
 
-import { useSpring, animated, config } from 'react-spring';
+import { useSpring, animated } from 'react-spring';
 
 type SubwayPathProps = {
   name: string;
@@ -15,7 +15,7 @@ const SubwayPath: FunctionComponent<SubwayPathProps> = ({
   data,
 }) => {
   const [path_color, set_color] = useState(color);
-  const [clear, set_clear] = useState(false);
+  // const [clear, set_clear] = useState(false);
   const { x } = useSpring({
     reset: true,
     from: { x: 0 },

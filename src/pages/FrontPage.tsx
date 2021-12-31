@@ -20,9 +20,18 @@ const FrontPage = ({ version }: { version: string }) => {
             v{version}
           </a>
         </h1>
-        <Navbar />
-        <AboutMe />
-        <SocialsCard />
+        <div className="FrontPage-navbar-container">
+          <Navbar />
+        </div>
+        <div className="FrontPage-sections">
+          <section></section>
+          <section id="about">
+            <AboutMe />
+          </section>
+          <section id="socials">
+            <SocialsCard />
+          </section>
+        </div>
       </div>
     </div>
   );
