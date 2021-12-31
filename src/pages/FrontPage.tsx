@@ -6,6 +6,23 @@ import AboutMe from '../components/AboutMe';
 import Projects from '../components/Projects';
 
 import './FrontPage.css';
+import Bubble from '../components/Bubble';
+
+const colors = [
+  '#aa5f33',
+  '#cf1e65',
+  '#06b69c',
+  '#abbb41',
+  '#d2a763',
+  '#8d7eba',
+  '#c8bfb3',
+  '#00afef',
+  '#1bb267',
+  '#0073bc',
+  '#faa428',
+  '#ef463e',
+  '#ed272a',
+];
 
 const FrontPage = ({ version }: { version: string }) => {
   return (
@@ -40,6 +57,17 @@ const FrontPage = ({ version }: { version: string }) => {
           </section>
         </div>
       </div>
+      {Array.from({ length: 13 }, (x, i) => {
+        return (
+          <Bubble
+            key={i}
+            color={colors[i]}
+            radius={Math.random() * 200 + 200}
+            top={Math.random() * 500}
+            left={Math.random() * 100}
+          />
+        );
+      })}
     </div>
   );
 };
