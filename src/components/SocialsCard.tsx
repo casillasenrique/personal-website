@@ -6,7 +6,7 @@ const iconPath = process.env.PUBLIC_URL + '/images/';
 
 const SocialsCard = () => {
   return (
-    <div id="socials" className="SocialsCard-container">
+    <div className="SocialsCard-container">
       <h2>Socials</h2>
       <div className="links">
         <FancyLink

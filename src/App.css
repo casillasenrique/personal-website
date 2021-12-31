@@ -13,8 +13,8 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 12pt;
-  height: 12pt;
+  width: 8pt;
+  height: 8pt;
 }
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0.1);
