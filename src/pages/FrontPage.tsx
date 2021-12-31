@@ -3,6 +3,8 @@ import SubwayLines from '../components/SubwayLines';
 import SocialsCard from '../components/SocialsCard';
 import Navbar from '../components/Navbar';
 import AboutMe from '../components/AboutMe';
+import Projects from '../components/Projects';
+
 import './FrontPage.css';
 
 const FrontPage = ({ version }: { version: string }) => {
@@ -28,7 +30,12 @@ const FrontPage = ({ version }: { version: string }) => {
           <section id="about">
             <AboutMe />
           </section>
+          <section id="projects">
+            <h1>Projects</h1>
+            <Projects />
+          </section>
           <section id="socials">
+            <h1>Socials</h1>
             <SocialsCard />
           </section>
         </div>

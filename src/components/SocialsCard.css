@@ -1,20 +1,10 @@
-.SocialsCard-container {
+.SocialsCard {
   padding: 2em;
   display: flex;
   flex-direction: column;
-
-  background: linear-gradient(
-    157.81deg,
-    rgba(171, 171, 171, 0.4) 3.65%,
-    rgba(171, 171, 171, 0.1) 96.08%
-  );
-  box-shadow: 0px 0px 24px -1px rgba(0, 0, 0, 0.25);
-  backdrop-filter: blur(10px);
-  border-radius: 1em;
-  /* border: 1px solid gray; */
 }
 
-.links {
+.SocialsCard-links {
   display: flex;
   font-weight: lighter;
   flex-direction: column;
