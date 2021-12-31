@@ -1,0 +1,54 @@
+.ProjectCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em;
+  /* width: 40em; */
+  text-align: left;
+}
+
+.ProjectCard h2 {
+  width: 100%;
+}
+
+.ProjectCard img {
+  width: 100%;
+  transition: transform 0.2s, opacity 0.2s;
+}
+
+.ProjectCard a {
+  position: relative;
+  overflow: hidden;
+  /* outline: solid; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 10px;
+}
+
+.ProjectCard a::before {
+  content: '';
+  background: rgba(255, 255, 255, 0.4);
+  width: 20%;
+  height: 100%;
+  top: 0%;
+  /* left: -125%; */
+  z-index: 999;
+  left: -100%;
+  transform: skew(45deg);
+  position: absolute;
+  transition: left 400ms ease-out;
+}
+
+.ProjectCard a:hover::before {
+  left: 150%;
+}
+
+.ProjectCard a:hover img {
+  transform: scale(1.1);
+  opacity: 80%;
+}
+
+.ProjectCard p {
+}
