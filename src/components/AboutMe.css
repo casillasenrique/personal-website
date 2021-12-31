@@ -1,8 +1,4 @@
-.SocialsCard-container {
-  padding: 2em;
-  display: flex;
-  flex-direction: column;
-
+.AboutMe {
   background: linear-gradient(
     157.81deg,
     rgba(171, 171, 171, 0.4) 3.65%,
@@ -11,22 +7,20 @@
   box-shadow: 0px 0px 24px -1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
   border-radius: 1em;
-  /* border: 1px solid gray; */
+  padding: 2em 1em;
+  text-align: left;
+  width: 400px;
 }
 
-.links {
-  display: flex;
-  font-weight: lighter;
-  flex-direction: column;
-  gap: 1.6em;
+.AboutMe p {
+  font-style: normal;
+  font-weight: normal;
+  mix-blend-mode: overlay;
 }
 
-h2 {
-  margin-top: 0;
-}
-
+/* Mobile Styling */
 @media (max-width: 500px) {
-  .links {
-    align-items: center;
+  .AboutMe {
+    width: 80%;
   }
 }

@@ -6,6 +6,7 @@ type FancyLinkProps = {
   label: string;
   iconSrc: string;
   alt?: string;
+  newTab?: boolean;
 };
 
 const FancyLink: FunctionComponent<FancyLinkProps> = ({
@@ -13,12 +14,13 @@ const FancyLink: FunctionComponent<FancyLinkProps> = ({
   label,
   iconSrc,
   alt,
+  newTab,
 }) => {
   return (
     <a
       className="FancyLink"
       href={to}
-      target="_blank"
+      target={newTab ? `_blank` : ''}
       rel="noopener noreferrer"
     >
       <img src={iconSrc} alt={alt || 'icon'} />
