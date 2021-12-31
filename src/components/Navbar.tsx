@@ -9,29 +9,26 @@ const Navbar = () => {
   return (
     <>
       <Controller>
-        <Scene duration={600} pin={true} enabled={true}>
+        <Scene duration={500} pin={true} enabled={true}>
           {(progress: number) => (
             <Tween
               to={{
                 top: '-1px',
-                // bottom: '90vh',
                 position: 'fixed',
                 width: '100%',
                 borderRadius: '0',
                 flexDirection: 'row',
+                fontSize: '12pt',
+                gap: '2em',
               }}
               ease="Power4.easeInOut"
               totalProgress={progress}
               paused
             >
               <nav className="Navbar">
-                <Tween
-                  to={{
-                    opacity: '1',
-                    display: 'flex',
-                  }}
-                  totalProgress={progress}
-                  paused
+                <Scene
+                  triggerElement="#about"
+                  classToggle={['.Navbar-top-button', 'active']}
                 >
                   <div className="Navbar-top-button">
                     <FancyLink
@@ -41,23 +38,23 @@ const Navbar = () => {
                       alt="icon"
                     />
                   </div>
-                </Tween>
+                </Scene>
                 <FancyLink
                   iconSrc={`${iconPath}info-circle-fill.svg`}
                   to="#about"
-                  label="About"
+                  label="ABOUT"
                   alt="icon"
                 />
                 <FancyLink
                   iconSrc={`${iconPath}code-slash.svg`}
                   to="#projects"
-                  label="Projects"
+                  label="PROJECTS"
                   alt="icon"
                 />
                 <FancyLink
                   iconSrc={`${iconPath}envelope-fill.svg`}
                   to="#socials"
-                  label="Socials"
+                  label="SOCIALS"
                   alt="icon"
                 />
               </nav>
