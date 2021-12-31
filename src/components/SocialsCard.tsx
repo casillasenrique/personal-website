@@ -9,7 +9,6 @@ const SocialsCard = () => {
   return (
     <GlassCard>
       <div className="SocialsCard">
-        <h2>Socials</h2>
         <div className="SocialsCard-links">
           <FancyLink
             to="mailto: casillasenrique2019@gmail.com"

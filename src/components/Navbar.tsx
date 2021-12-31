@@ -26,19 +26,6 @@ const Navbar = () => {
               paused
             >
               <nav className="Navbar">
-                <Scene
-                  triggerElement="#about"
-                  classToggle={['.Navbar-top-button', 'active']}
-                >
-                  <div className="Navbar-top-button">
-                    <FancyLink
-                      iconSrc={`${iconPath}list.svg`}
-                      to="#"
-                      label="Top"
-                      alt="icon"
-                    />
-                  </div>
-                </Scene>
                 <FancyLink
                   iconSrc={`${iconPath}info-circle-fill.svg`}
                   to="#about"
@@ -57,6 +44,19 @@ const Navbar = () => {
                   label="SOCIALS"
                   alt="icon"
                 />
+                <Scene
+                  triggerElement="#about"
+                  classToggle={['.Navbar-top-button', 'active']}
+                >
+                  <div className="Navbar-top-button">
+                    <FancyLink
+                      iconSrc={`${iconPath}list.svg`}
+                      to="#"
+                      label="TOP"
+                      alt="icon"
+                    />
+                  </div>
+                </Scene>
               </nav>
             </Tween>
           )}
