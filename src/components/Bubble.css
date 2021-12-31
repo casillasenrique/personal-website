@@ -1,0 +1,6 @@
+.Bubble {
+  position: absolute;
+  z-index: 0;
+  filter: blur(100px);
+  border-radius: 50%;
+}
