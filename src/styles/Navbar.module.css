@@ -1,6 +1,7 @@
-.Navbar {
+.container {
   position: fixed;
   display: flex;
+
   background-color: rgba(51, 51, 51, 0.5);
   backdrop-filter: blur(10px);
   border-radius: 1em;
@@ -17,17 +18,19 @@
   gap: 1em;
   z-index: 999;
   flex-wrap: wrap;
+
+  font-size: 32pt;
+  font-weight: 300;
 }
 
-.Navbar-top-button {
+.top {
   /* position: absolute; */
-  opacity: 50%;
   display: none;
 }
 
-/* .active {
-  opacity: inline;
-} */
+.active {
+  display: flex;
+}
 
 /* .section {
   width: max-content;

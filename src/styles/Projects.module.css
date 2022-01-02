@@ -1,0 +1,20 @@
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 2em;
+  gap: 3em;
+}
+
+/* Mobile Styling */
+@media (max-width: 1200px) {
+  .projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile Styling */
+@media (max-width: 700px) {
+  .projects {
+    grid-template-columns: none;
+  }
+}

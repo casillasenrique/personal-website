@@ -1,0 +1,19 @@
+.SocialsCard {
+  padding: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  font-weight: lighter;
+  flex-direction: column;
+  gap: 1.6em;
+}
+
+@media (max-width: 500px) {
+  .links {
+    align-items: center;
+  }
+}

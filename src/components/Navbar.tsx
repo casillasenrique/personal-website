@@ -1,65 +1,59 @@
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween } from 'react-gsap';
 import FancyLink from './FancyLink';
-import './Navbar.css';
-
-const iconPath = process.env.PUBLIC_URL + '/images/';
+import styles from '../styles/Navbar.module.css';
+import aboutMeIcon from '../images/info-circle-fill.svg';
+import projectsIcon from '../images/code-slash.svg';
+import socialsIcon from '../images/envelope-fill.svg';
+import topIcon from '../images/list.svg';
 
 const Navbar = () => {
   return (
     <>
       <Controller>
-        <Scene duration={600} pin={true} enabled={true}>
+        <Scene duration={500} pin={true} enabled={true}>
           {(progress: number) => (
             <Tween
               to={{
                 top: '-1px',
-                // bottom: '90vh',
                 position: 'fixed',
                 width: '100%',
                 borderRadius: '0',
                 flexDirection: 'row',
+                fontSize: '12pt',
+                gap: '2em',
               }}
               ease="Power4.easeInOut"
               totalProgress={progress}
               paused
             >
-              <nav className="Navbar">
-                <Tween
-                  to={{
-                    opacity: '1',
-                    display: 'flex',
-                  }}
-                  totalProgress={progress}
-                  paused
-                >
-                  <div className="Navbar-top-button">
-                    <FancyLink
-                      iconSrc={`${iconPath}list.svg`}
-                      to="#"
-                      label="Top"
-                      alt="icon"
-                    />
-                  </div>
-                </Tween>
+              <nav className={styles.container}>
                 <FancyLink
-                  iconSrc={`${iconPath}info-circle-fill.svg`}
+                  icon={aboutMeIcon}
                   to="#about"
-                  label="About"
+                  label="ABOUT"
                   alt="icon"
                 />
                 <FancyLink
-                  iconSrc={`${iconPath}code-slash.svg`}
+                  icon={projectsIcon}
                   to="#projects"
-                  label="Projects"
+                  label="PROJECTS"
                   alt="icon"
                 />
                 <FancyLink
-                  iconSrc={`${iconPath}envelope-fill.svg`}
+                  icon={socialsIcon}
                   to="#socials"
-                  label="Socials"
+                  label="SOCIALS"
                   alt="icon"
                 />
+                <Scene
+                  triggerElement="#about"
+                  classToggle={[`.${styles.top}`, styles.active]}
+                >
+                  <div className={styles.top}>
+                    <FancyLink icon={topIcon} to="#" label="TOP" alt="icon" />
+                  </div>
+                </Scene>
               </nav>
             </Tween>
           )}
