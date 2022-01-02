@@ -1,7 +1,7 @@
 import FrontPage from './FrontPage';
 import Head from 'next/head';
 
-const VERSION: string = '1.4.0';
+const VERSION: string = '2.0.0';
 
 function HomePage() {
   return (
