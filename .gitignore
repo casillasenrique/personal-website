@@ -24,3 +24,7 @@ yarn-error.log*
 
 /creator_contents
 /.vscode
+
+# next.js
+/.next/
+/out/

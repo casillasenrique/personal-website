@@ -1,14 +1,16 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import './Projects.css';
-
-const imagePath = process.env.PUBLIC_URL + '/images/';
+import marcxScreenshot from '../images/marcx-screenshot.png';
+import fritterScreenshot from '../images/fritter-screenshot.png';
+import roundTableScreenshot from '../images/round-table-screenshot.png';
+import migrationVizScreenshot from '../images/migration-viz-screenshot.png';
+import styles from '../styles/Projects.module.css';
 
 const Projects = () => {
   return (
-    <div className="Projects">
+    <div className={styles.projects}>
       <ProjectCard
-        imgPath={`${imagePath}marcx-screenshot.png`}
+        image={marcxScreenshot}
         projectUrl="https://marcx.herokuapp.com/"
         title="MarcX"
       >
@@ -28,7 +30,7 @@ const Projects = () => {
       </ProjectCard>
       <ProjectCard
         title="Round Table"
-        imgPath={`${imagePath}round-table-screenshot.png`}
+        image={roundTableScreenshot}
         projectUrl="https://mr-round-table.herokuapp.com/"
       >
         <p>
@@ -46,7 +48,7 @@ const Projects = () => {
       </ProjectCard>
       <ProjectCard
         title="Family Separations Visualization"
-        imgPath={`${imagePath}migration-viz-screenshot.png`}
+        image={migrationVizScreenshot}
         projectUrl="https://sophzheng.github.io/11.154-family-separations/"
       >
         <p>
@@ -67,7 +69,7 @@ const Projects = () => {
       </ProjectCard>
       <ProjectCard
         title="Fritter"
-        imgPath={`${imagePath}fritter-screenshot.png`}
+        image={fritterScreenshot}
         projectUrl="https://enriquec-fritter-visual.herokuapp.com/"
       >
         <p>

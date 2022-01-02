@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.FrontPage-title {
+.title {
   display: flex;
   align-items: baseline;
   font-weight: lighter;
@@ -11,17 +11,17 @@
   font-size: 50pt;
 }
 
-.FrontPage-title a {
+.title a {
   font-size: 0.15em;
   color: #e6e6e6;
   text-decoration: none;
 }
 
-.FrontPage-title a:hover {
+.title a:hover {
   text-decoration: underline;
 }
 
-.FrontPage-components {
+.components {
   position: relative;
   z-index: 999;
   display: flex;
@@ -29,12 +29,12 @@
   align-items: center;
 }
 
-.FrontPage-sections {
+.sections {
   display: flex;
   flex-direction: column;
 }
 
-.FrontPage-sections section {
+.sections section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -42,7 +42,7 @@
   align-items: center;
 }
 
-.FrontPage-navbar-container {
+.navbar {
   position: absolute;
   top: 0;
   height: 100vh;
@@ -51,9 +51,17 @@
   align-items: center;
 }
 
+.bubbles {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
 /* Mobile Styling */
 @media (max-width: 500px) {
-  .FrontPage-title {
+  .title {
     flex-direction: column;
     align-items: center;
   }

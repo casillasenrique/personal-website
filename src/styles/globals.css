@@ -6,6 +6,7 @@ body {
   font-family: 'Josefin Sans', sans-serif;
   color: white;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 ::selection {
@@ -30,4 +31,8 @@ body {
 
 h1 {
   font-weight: 300;
+}
+
+h2 {
+  margin-top: 0;
 }

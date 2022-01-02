@@ -1,5 +1,5 @@
 import React, { FunctionComponent, useState } from 'react';
-import './SubwayPath.css';
+import styles from '../styles/SubwayPath.module.css';
 
 import { useSpring, animated } from 'react-spring';
 
@@ -27,7 +27,7 @@ const SubwayPath: FunctionComponent<SubwayPathProps> = ({
   });
 
   return (
-    <div className="SubwayPath-container">
+    <div className={styles.container}>
       <animated.svg
         viewBox="0 0 3449 2443"
         strokeDasharray={10000}

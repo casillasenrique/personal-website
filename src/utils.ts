@@ -1,0 +1,15 @@
+export const SUBWAY_PATH_COLORS: string[] = [
+  '#aa5f33',
+  '#cf1e65',
+  '#06b69c',
+  '#abbb41',
+  '#d2a763',
+  '#8d7eba',
+  '#c8bfb3',
+  '#00afef',
+  '#1bb267',
+  '#0073bc',
+  '#faa428',
+  '#ef463e',
+  '#ed272a',
+];
