@@ -6,7 +6,6 @@
   text-decoration: none;
   gap: 1em;
   font-size: 1.3em;
-  flex-wrap: wrap;
 }
 
 .label {
@@ -62,11 +61,7 @@
   transform: scale(1.1, 1.1);
 }
 
-@media (max-width: 500px) {
-  .container {
-    flex-direction: row;
-  }
-
+@media (max-width: 600px) {
   .label {
     display: none;
   }

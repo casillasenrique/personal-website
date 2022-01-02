@@ -8,8 +8,6 @@
   box-sizing: border-box;
   padding: 2em;
 
-  /* padding: 10pt; */
-
   width: max-content;
   height: max-content;
 
@@ -32,6 +30,10 @@
   display: flex;
 }
 
-/* .section {
-  width: max-content;
-} */
+@media (max-width: 600px) {
+  .container {
+    align-items: center;
+    padding: 1em;
+    font-size: 24pt;
+  }
+}
