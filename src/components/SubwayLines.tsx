@@ -1,10 +1,10 @@
 import React from 'react';
 import SubwayPath from './SubwayPath';
-import './SubwayLines.css';
+import styles from '../styles/SubwayLines.module.css';
 
 const SubwayLines = () => {
   return (
-    <div className="SubwayLines-container">
+    <div className={styles.container}>
       <SubwayPath
         name="Fukutoshin Line"
         color="#aa5f33"

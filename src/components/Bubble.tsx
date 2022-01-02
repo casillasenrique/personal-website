@@ -1,5 +1,5 @@
 import React, { FunctionComponent } from 'react';
-import './Bubble.css';
+import styles from '../styles/Bubble.module.css';
 
 type BubbleProps = {
   radius: string | number;
@@ -16,7 +16,7 @@ const Bubble: FunctionComponent<BubbleProps> = ({
 }) => {
   return (
     <div
-      className="Bubble"
+      className={styles.Bubble}
       style={{
         width: radius,
         height: radius,

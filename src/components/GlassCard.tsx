@@ -1,8 +1,8 @@
 import React, { FunctionComponent } from 'react';
-import './GlassCard.css';
+import styles from '../styles/GlassCard.module.css';
 
 const GlassCard: FunctionComponent = ({ children }) => {
-  return <div className="GlassCard">{children}</div>;
+  return <div className={styles.GlassCard}>{children}</div>;
 };
 
 export default GlassCard;

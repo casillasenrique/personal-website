@@ -1,10 +1,11 @@
 import React, { FunctionComponent } from 'react';
-import './FancyLink.css';
+import Image from 'next/image';
+import styles from '../styles/FancyLink.module.css';
 
 type FancyLinkProps = {
   to: string;
   label: string;
-  iconSrc: string;
+  icon: string;
   alt?: string;
   newTab?: boolean;
 };
@@ -12,21 +13,26 @@ type FancyLinkProps = {
 const FancyLink: FunctionComponent<FancyLinkProps> = ({
   to,
   label,
-  iconSrc,
+  icon,
   alt,
   newTab,
 }) => {
   return (
     <a
-      className="FancyLink"
+      className={styles.container}
       href={to}
       target={newTab ? `_blank` : ''}
       rel="noopener noreferrer"
     >
-      <img src={iconSrc} alt={alt || 'icon'} />
-      <label className="FancyLink-label FancyLink-label-underline">
-        {label}
-      </label>
+      <div className={styles.iconContainer}>
+        <Image
+          className={styles.icon}
+          src={icon}
+          alt={alt || 'icon'}
+          layout="responsive"
+        />
+      </div>
+      <label className={styles.label}>{label}</label>
     </a>
   );
 };

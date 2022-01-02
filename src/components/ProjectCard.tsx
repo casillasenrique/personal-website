@@ -1,27 +1,28 @@
 import React, { FunctionComponent } from 'react';
+import Image from 'next/image';
 import GlassCard from './GlassCard';
-import './ProjectCard.css';
+import styles from '../styles/ProjectCard.module.css';
 
 type ProjectCardProps = {
   title: string;
-  imgPath: string;
+  image: string;
   projectUrl: string;
 };
 
 const ProjectCard: FunctionComponent<ProjectCardProps> = ({
   children,
   title,
-  imgPath,
+  image,
   projectUrl,
 }) => {
   return (
     <GlassCard>
-      <div className="ProjectCard">
+      <div className={styles.ProjectCard}>
         <h2>{title}</h2>
         <a href={projectUrl} target="_blank" rel="noopener noreferrer">
-          <img src={imgPath} alt={projectUrl} />
+          <Image src={image} alt={projectUrl} />
         </a>
-        <div className="ProjectCard-description">{children}</div>
+        <div className={styles.description}>{children}</div>
       </div>
     </GlassCard>
   );

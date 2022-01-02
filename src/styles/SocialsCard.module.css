@@ -5,15 +5,11 @@
   align-items: center;
 }
 
-.SocialsCard-links {
+.links {
   display: flex;
   font-weight: lighter;
   flex-direction: column;
   gap: 1.6em;
-}
-
-h2 {
-  margin-top: 0;
 }
 
 @media (max-width: 500px) {

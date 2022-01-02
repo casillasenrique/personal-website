@@ -1,10 +1,10 @@
 import GlassCard from './GlassCard';
-import './AboutMe.css';
+import styles from '../styles/AboutMe.module.css';
 
 const AboutMe = () => {
   return (
     <GlassCard>
-      <div className="AboutMe">
+      <div className={styles.AboutMe}>
         <h2>About Me</h2>
         <p>
           Hi! My name is Enrique Casillas. I am a 3rd year undergraduate student

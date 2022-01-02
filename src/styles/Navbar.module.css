@@ -1,4 +1,4 @@
-.Navbar {
+.container {
   position: fixed;
   display: flex;
 
@@ -23,7 +23,7 @@
   font-weight: 300;
 }
 
-.Navbar-top-button {
+.top {
   /* position: absolute; */
   display: none;
 }

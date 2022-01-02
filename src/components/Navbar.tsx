@@ -1,9 +1,11 @@
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween } from 'react-gsap';
 import FancyLink from './FancyLink';
-import './Navbar.css';
-
-const iconPath = process.env.PUBLIC_URL + '/images/';
+import styles from '../styles/Navbar.module.css';
+import aboutMeIcon from '../images/info-circle-fill.svg';
+import projectsIcon from '../images/code-slash.svg';
+import socialsIcon from '../images/envelope-fill.svg';
+import topIcon from '../images/list.svg';
 
 const Navbar = () => {
   return (
@@ -25,36 +27,31 @@ const Navbar = () => {
               totalProgress={progress}
               paused
             >
-              <nav className="Navbar">
+              <nav className={styles.container}>
                 <FancyLink
-                  iconSrc={`${iconPath}info-circle-fill.svg`}
+                  icon={aboutMeIcon}
                   to="#about"
                   label="ABOUT"
                   alt="icon"
                 />
                 <FancyLink
-                  iconSrc={`${iconPath}code-slash.svg`}
+                  icon={projectsIcon}
                   to="#projects"
                   label="PROJECTS"
                   alt="icon"
                 />
                 <FancyLink
-                  iconSrc={`${iconPath}envelope-fill.svg`}
+                  icon={socialsIcon}
                   to="#socials"
                   label="SOCIALS"
                   alt="icon"
                 />
                 <Scene
                   triggerElement="#about"
-                  classToggle={['.Navbar-top-button', 'active']}
+                  classToggle={[`.${styles.top}`, styles.active]}
                 >
-                  <div className="Navbar-top-button">
-                    <FancyLink
-                      iconSrc={`${iconPath}list.svg`}
-                      to="#"
-                      label="TOP"
-                      alt="icon"
-                    />
+                  <div className={styles.top}>
+                    <FancyLink icon={topIcon} to="#" label="TOP" alt="icon" />
                   </div>
                 </Scene>
               </nav>
