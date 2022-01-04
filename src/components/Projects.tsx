@@ -13,6 +13,7 @@ const Projects = () => {
         image={marcxScreenshot}
         projectUrl="https://marcx.herokuapp.com/"
         title="MarcX"
+        key="MarcX"
       >
         <p>
           MarcX is a proof-of-concept bookmark manager that takes bookmarks to
@@ -32,6 +33,7 @@ const Projects = () => {
         title="Round Table"
         image={roundTableScreenshot}
         projectUrl="https://mr-round-table.herokuapp.com/"
+        key="Round Table"
       >
         <p>
           Round table serves as a location-based forum for 311-related issues in
@@ -50,6 +52,7 @@ const Projects = () => {
         title="Family Separations Visualization"
         image={migrationVizScreenshot}
         projectUrl="https://sophzheng.github.io/11.154-family-separations/"
+        key="Family Separations Visualization"
       >
         <p>
           This project served to visualize family separations under Donald
@@ -71,6 +74,7 @@ const Projects = () => {
         title="Fritter"
         image={fritterScreenshot}
         projectUrl="https://enriquec-fritter-visual.herokuapp.com/"
+        key="Fritter"
       >
         <p>
           Fritter was developed as part of an ongoing solo assignment during the
