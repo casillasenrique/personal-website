@@ -1,9 +1,9 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import marcxScreenshot from '../images/marcx-screenshot.png';
-import fritterScreenshot from '../images/fritter-screenshot.png';
-import roundTableScreenshot from '../images/round-table-screenshot.png';
-import migrationVizScreenshot from '../images/migration-viz-screenshot.png';
+import marcxScreenshot from '../images/marcx-screenshot.jpg';
+import fritterScreenshot from '../images/fritter-screenshot.jpg';
+import roundTableScreenshot from '../images/round-table-screenshot.jpg';
+import migrationVizScreenshot from '../images/migration-viz-screenshot.jpg';
 import styles from '../styles/Projects.module.css';
 
 const Projects = () => {
