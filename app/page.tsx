@@ -9,7 +9,7 @@ import { SUBWAY_PATH_COLORS } from '../lib/utils';
 import styles from '../styles/FrontPage.module.css';
 import Bubble from '../components/Bubble';
 
-const VERSION: string = '2.0.2';
+const VERSION: string = '3.0.0';
 
 export default function Page() {
   return (
