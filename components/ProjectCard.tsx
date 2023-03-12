@@ -1,11 +1,11 @@
 import React, { FunctionComponent } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import GlassCard from './GlassCard';
 import styles from '../styles/ProjectCard.module.css';
 
 type ProjectCardProps = {
   title: string;
-  image: string;
+  image: StaticImageData;
   projectUrl: string;
 };
 

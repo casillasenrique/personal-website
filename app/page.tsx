@@ -4,12 +4,14 @@ import SocialsCard from '../components/SocialsCard';
 import Navbar from '../components/Navbar';
 import AboutMe from '../components/AboutMe';
 import Projects from '../components/Projects';
-import { SUBWAY_PATH_COLORS } from '../utils';
+import { SUBWAY_PATH_COLORS } from '../lib/utils';
 
 import styles from '../styles/FrontPage.module.css';
 import Bubble from '../components/Bubble';
 
-const FrontPage = ({ version }: { version: string }) => {
+const VERSION: string = '2.0.2';
+
+export default function Page() {
   return (
     <div className={styles.FrontPage}>
       <SubwayLines />
@@ -21,7 +23,7 @@ const FrontPage = ({ version }: { version: string }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            v{version}
+            v{VERSION}
           </a>
         </h1>
         <div className={styles.navbar}>
@@ -57,6 +59,4 @@ const FrontPage = ({ version }: { version: string }) => {
       </div>
     </div>
   );
-};
-
-export default FrontPage;
+}
