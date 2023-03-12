@@ -1,11 +1,13 @@
+'use client';
+
 import { Controller, Scene } from 'react-scrollmagic';
 import { Tween } from 'react-gsap';
 import FancyLink from './FancyLink';
 import styles from '../styles/Navbar.module.css';
-import aboutMeIcon from '../images/info-circle-fill.svg';
-import projectsIcon from '../images/code-slash.svg';
-import socialsIcon from '../images/envelope-fill.svg';
-import topIcon from '../images/list.svg';
+import aboutMeIcon from '../public/images/info-circle-fill.svg';
+import projectsIcon from '../public/images/code-slash.svg';
+import socialsIcon from '../public/images/envelope-fill.svg';
+import topIcon from '../public/images/list.svg';
 
 const Navbar = () => {
   return (

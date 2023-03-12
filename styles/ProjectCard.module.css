@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 2em;
-  /* width: 40em; */
+  width: 20vw;
   text-align: left;
 }
 
@@ -12,8 +12,9 @@
 }
 
 .ProjectCard img {
-  width: 100%;
   transition: transform 0.2s, opacity 0.2s;
+  width: 100%;
+  height: auto;
 }
 
 .ProjectCard a {

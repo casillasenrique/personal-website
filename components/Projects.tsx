@@ -1,9 +1,9 @@
 import React from 'react';
 import ProjectCard from './ProjectCard';
-import marcxScreenshot from '../images/marcx-screenshot.png';
-import fritterScreenshot from '../images/fritter-screenshot.png';
-import roundTableScreenshot from '../images/round-table-screenshot.png';
-import migrationVizScreenshot from '../images/migration-viz-screenshot.png';
+import marcxScreenshot from '../public/images/marcx-screenshot.jpg';
+import fritterScreenshot from '../public/images/fritter-screenshot.jpg';
+import roundTableScreenshot from '../public/images/round-table-screenshot.jpg';
+import migrationVizScreenshot from '../public/images/migration-viz-screenshot.jpg';
 import styles from '../styles/Projects.module.css';
 
 const Projects = () => {
@@ -11,8 +11,9 @@ const Projects = () => {
     <div className={styles.projects}>
       <ProjectCard
         image={marcxScreenshot}
-        projectUrl="https://marcx.herokuapp.com/"
+        projectUrl="/marcx"
         title="MarcX"
+        key="MarcX"
       >
         <p>
           MarcX is a proof-of-concept bookmark manager that takes bookmarks to
@@ -32,6 +33,7 @@ const Projects = () => {
         title="Round Table"
         image={roundTableScreenshot}
         projectUrl="https://mr-round-table.herokuapp.com/"
+        key="Round Table"
       >
         <p>
           Round table serves as a location-based forum for 311-related issues in
@@ -50,6 +52,7 @@ const Projects = () => {
         title="Family Separations Visualization"
         image={migrationVizScreenshot}
         projectUrl="https://sophzheng.github.io/11.154-family-separations/"
+        key="Family Separations Visualization"
       >
         <p>
           This project served to visualize family separations under Donald
@@ -71,6 +74,7 @@ const Projects = () => {
         title="Fritter"
         image={fritterScreenshot}
         projectUrl="https://enriquec-fritter-visual.herokuapp.com/"
+        key="Fritter"
       >
         <p>
           Fritter was developed as part of an ongoing solo assignment during the

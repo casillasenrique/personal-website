@@ -4,14 +4,14 @@ import GlassCard from './GlassCard';
 import styles from '../styles/SocialsCard.module.css';
 
 // Icons
-import emailIcon from '../images/envelope-fill.svg';
-import githubIcon from '../images/github.svg';
-import linkedInIcon from '../images/linkedin.svg';
-import facebookIcon from '../images/facebook.svg';
-import instagramIcon from '../images/instagram.svg';
-import twitterIcon from '../images/twitter.svg';
-import youtubeIcon from '../images/youtube.svg';
-import twitchIcon from '../images/twitch.svg';
+import emailIcon from '../public/images/envelope-fill.svg';
+import githubIcon from '../public/images/github.svg';
+import linkedInIcon from '../public/images/linkedin.svg';
+import facebookIcon from '../public/images/facebook.svg';
+import instagramIcon from '../public/images/instagram.svg';
+import twitterIcon from '../public/images/twitter.svg';
+import youtubeIcon from '../public/images/youtube.svg';
+import twitchIcon from '../public/images/twitch.svg';
 
 const SocialsCard = () => {
   return (
