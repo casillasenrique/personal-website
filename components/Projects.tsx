@@ -11,7 +11,7 @@ const Projects = () => {
     <div className={styles.projects}>
       <ProjectCard
         image={marcxScreenshot}
-        projectUrl="https://marcx.herokuapp.com/"
+        projectUrl="/marcx"
         title="MarcX"
         key="MarcX"
       >

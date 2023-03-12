@@ -25,12 +25,7 @@ const FancyLink: FunctionComponent<FancyLinkProps> = ({
       rel="noopener noreferrer"
     >
       <div className={styles.iconContainer}>
-        <Image
-          className={styles.icon}
-          src={icon}
-          alt={alt || 'icon'}
-          layout="responsive"
-        />
+        <Image className={styles.icon} src={icon} alt={alt || 'icon'} />
       </div>
       <label className={styles.label}>{label}</label>
     </a>
