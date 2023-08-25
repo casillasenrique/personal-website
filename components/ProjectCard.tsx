@@ -20,7 +20,7 @@ const ProjectCard: FunctionComponent<ProjectCardProps> = ({
       <div className={styles.ProjectCard}>
         <h2>{title}</h2>
         <a href={projectUrl} target="_blank" rel="noopener noreferrer">
-          <Image src={image} alt={projectUrl} />
+          <Image src={image} alt={projectUrl} loading="eager" />
         </a>
         <div className={styles.description}>{children}</div>
       </div>
