@@ -7,8 +7,9 @@ import migrationVizScreenshot from '../public/images/migration-viz-screenshot.jp
 import livingHeritageScreenshot from '../public/images/living-heritage-beirut.png';
 import vidaMigranteScreenshot from '../public/images/vida-migrante.png';
 import fortunaScreenshot from '../public/images/fortuna-screenshot.png';
+import spatialEquityScreenshot from '../public/images/spatial-equity.png';
+import deathPrescriptionScreenshot from '../public/images/death-prescription-screenshot.png';
 import styles from '../styles/Projects.module.css';
-import FancyLink from './FancyLink';
 
 const Projects = () => {
   return (
@@ -27,7 +28,7 @@ const Projects = () => {
           often face, many of which relate to food insecurity.
         </p>
         <p>
-          This project was developed as part of the Civic Data Design Lab in
+          This project was developed as part of MIT's Civic Data Design Lab in
           collaboration with the World Food Programme (WFP) using SvelteKit as
           the primary framework for developent. I helped lead the development
           side of the website by delegating tasks and triaging bugs.
@@ -36,7 +37,7 @@ const Projects = () => {
       <ProjectCard
         image={fortunaScreenshot}
         projectUrl="https://fortuna-2022.herokuapp.com/ "
-        title="Fortuna"
+        title="FORTUNA"
         key="Fortuna"
       >
         <p>
@@ -70,9 +71,29 @@ const Projects = () => {
           workshops.
         </p>
         <p>
-          This project was developed as part of the Civic Data Design Lab using
-          Next.js and MongoDB as the primary tech stack, with Python being used
-          heavily for data processing and analysis.
+          This project was developed as part of MIT's Civic Data Design Lab
+          using Next.js and MongoDB as the primary tech stack, with Python being
+          used heavily for data processing and analysis.
+        </p>
+      </ProjectCard>
+      <ProjectCard
+        image={spatialEquityScreenshot}
+        projectUrl="http://spatialequity.nyc/"
+        title="Spatial Equity NYC"
+        key="Spatial Equity"
+      >
+        <p>
+          Spatial Equity NYC is an online tool visualizes key data in mobility,
+          environment, and health categories in New York City. The tool
+          indicates where spatial inequities are most prevalent and allows users
+          can compare their neighborhoods and see how community boards and
+          council districts rank amongst each other.
+        </p>
+        <p>
+          This project was developed as part of MIT's Leventhal Center for
+          Advanced Urbanism in collaboration with Transportation Alternatives. I
+          worked specifically with the map, using React, Mapbox, Deck.gl, and
+          Nebula.gl for implementing different features.
         </p>
       </ProjectCard>
       <ProjectCard
@@ -93,6 +114,25 @@ const Projects = () => {
         <p>
           This project was developed with a React, Node, Express, and MongoDB
           tech stack.
+        </p>
+      </ProjectCard>
+      <ProjectCard
+        image={deathPrescriptionScreenshot}
+        projectUrl="https://play.unity.com/mg/other/build-0-1-0"
+        title="Death Prescription"
+        key="Death Prescription"
+      >
+        <p>
+          Death Prescription is a 2-player competitive game that features
+          asymmetric information as a primary game mechanic. The primary goal is
+          either to escape the haunted hospital as the patient, or catch the
+          patient as the mad doctor. Users use a novel method of wearing tinted
+          glasses so that they can only see their own player.
+        </p>
+        <p>
+          This project was developed using the Unity game engine in a team of 4
+          others and involved sourcing and creating the artwork and animations,
+          finding music and sound effects, and programming the game logic in C#.
         </p>
       </ProjectCard>
       <ProjectCard
