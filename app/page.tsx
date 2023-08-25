@@ -49,15 +49,7 @@ export default function Page() {
       </div>
       <div className={styles.bubbles}>
         {Array.from({ length: 13 }, (x, i) => {
-          return (
-            <Bubble
-              key={i}
-              color={SUBWAY_PATH_COLORS[i]}
-              radius={Math.random() * 200 + 200}
-              top={Math.random() * 500}
-              left={Math.random() * 100}
-            />
-          );
+          return <Bubble key={i} color={SUBWAY_PATH_COLORS[i]} />;
         })}
       </div>
     </div>
