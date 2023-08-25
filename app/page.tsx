@@ -36,6 +36,9 @@ export default function Page() {
           </section>
           <section id="projects">
             <h1>Projects</h1>
+            <h5 style={{ margin: 0 }}>
+              Note: Some links may be broken due to Heroku's changes in 2022.
+            </h5>
             <Projects />
           </section>
           <section id="socials">
