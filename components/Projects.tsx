@@ -4,11 +4,77 @@ import marcxScreenshot from '../public/images/marcx-screenshot.jpg';
 import fritterScreenshot from '../public/images/fritter-screenshot.jpg';
 import roundTableScreenshot from '../public/images/round-table-screenshot.jpg';
 import migrationVizScreenshot from '../public/images/migration-viz-screenshot.jpg';
+import livingHeritageScreenshot from '../public/images/living-heritage-beirut.png';
+import vidaMigranteScreenshot from '../public/images/vida-migrante.png';
+import fortunaScreenshot from '../public/images/fortuna-screenshot.png';
 import styles from '../styles/Projects.module.css';
+import FancyLink from './FancyLink';
 
 const Projects = () => {
   return (
     <div className={styles.projects}>
+      <ProjectCard
+        image={vidaMigranteScreenshot}
+        projectUrl="https://vidamigrante.migration.mit.edu/"
+        title="Vida Migrante"
+        key="Vida Migrante"
+      >
+        <p>
+          Vida Migrante is a simulation that allows users to step into the shoes
+          of Venezualan migrants trying to integrate into Ecuador, facing many
+          challenges along the way. The turn-based simulation allows users to
+          make coping strategy decisions based on certain events that migrants
+          often face, many of which relate to food insecurity.
+        </p>
+        <p>
+          This project was developed as part of the Civic Data Design Lab in
+          collaboration with the World Food Programme (WFP) using SvelteKit as
+          the primary framework for developent. I helped lead the development
+          side of the website by delegating tasks and triaging bugs.
+        </p>
+      </ProjectCard>
+      <ProjectCard
+        image={fortunaScreenshot}
+        projectUrl="https://fortuna-2022.herokuapp.com/ "
+        title="Fortuna"
+        key="Fortuna"
+      >
+        <p>
+          Fortuna is a futuristic online casino interfacing with the Ethereum
+          blockchain that allows users to chat and play casino games with
+          others, use in-game currency to mint their own custom NFTs, and view
+          and trade their NFTs elsewhere. The game features several
+          community-building features such as a leaderboard and text chats in
+          and out of game.
+        </p>
+        <p>
+          This project was developed as part of a 3-person team for MIT's WebLab
+          programming competition, in which we won first place. The tech stack
+          included React, MongoDB, Firebase, Express, Node.js, and Solidity for
+          the custom tokens and NFTs.
+        </p>
+      </ProjectCard>
+      <ProjectCard
+        image={livingHeritageScreenshot}
+        projectUrl="https://livingheritage.mit.edu/"
+        title="Living Heritage Atlas - Beirut"
+        key="Beirut"
+      >
+        <p>
+          In light of the 2020 port explosion in Beirut, Lebanon,{' '}
+          <i>Living Heritage Atlas</i> documents and visualizes Beirut's living
+          heritage of artisanship by mapping its craftspeople and cataloging its
+          crafts through an open-source database, viewable through an
+          interactive website. This project celebrates the past and present of
+          local artisanship through archival data, interviews and community
+          workshops.
+        </p>
+        <p>
+          This project was developed as part of the Civic Data Design Lab using
+          Next.js and MongoDB as the primary tech stack, with Python being used
+          heavily for data processing and analysis.
+        </p>
+      </ProjectCard>
       <ProjectCard
         image={marcxScreenshot}
         projectUrl="/marcx"
