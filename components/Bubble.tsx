@@ -1,19 +1,18 @@
-import React, { FunctionComponent } from 'react';
+'use client';
+import React, { FunctionComponent, useEffect, useState } from 'react';
 import styles from '../styles/Bubble.module.css';
 
 type BubbleProps = {
-  radius: string | number;
   color: string;
-  top: number;
-  left: number;
 };
 
-const Bubble: FunctionComponent<BubbleProps> = ({
-  radius,
-  color,
-  top,
-  left,
-}) => {
+const Bubble: FunctionComponent<BubbleProps> = ({ color }) => {
+  const [radius, setRadius] = useState(0);
+
+  useEffect(() => {
+    setRadius(Math.random() * 200 + 200);
+  }, []);
+
   return (
     <div
       className={styles.Bubble}
@@ -21,8 +20,8 @@ const Bubble: FunctionComponent<BubbleProps> = ({
         width: radius,
         height: radius,
         backgroundColor: color,
-        top: `${top}%`,
-        left: `${left}%`,
+        top: `${Math.random() * 500}%`,
+        left: `${Math.random() * 100}%`,
       }}
     ></div>
   );

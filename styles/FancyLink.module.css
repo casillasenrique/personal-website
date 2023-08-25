@@ -42,7 +42,9 @@
 }
 
 .iconContainer {
+  position: relative;
   width: 1.5em;
+  height: 1.5em;
   -webkit-transition: transform 0.2s ease-in-out;
   transition: transform 0.2s ease-in-out;
 }

@@ -9,7 +9,7 @@ import { SUBWAY_PATH_COLORS } from '../lib/utils';
 import styles from '../styles/FrontPage.module.css';
 import Bubble from '../components/Bubble';
 
-const VERSION: string = '3.0.0';
+const VERSION: string = '3.1.0';
 
 export default function Page() {
   return (
@@ -36,6 +36,9 @@ export default function Page() {
           </section>
           <section id="projects">
             <h1>Projects</h1>
+            <h5 style={{ margin: 0 }}>
+              Note: Some links may be broken due to Heroku's changes in 2022.
+            </h5>
             <Projects />
           </section>
           <section id="socials">
@@ -46,15 +49,7 @@ export default function Page() {
       </div>
       <div className={styles.bubbles}>
         {Array.from({ length: 13 }, (x, i) => {
-          return (
-            <Bubble
-              key={i}
-              color={SUBWAY_PATH_COLORS[i]}
-              radius={Math.random() * 200 + 200}
-              top={Math.random() * 500}
-              left={Math.random() * 100}
-            />
-          );
+          return <Bubble key={i} color={SUBWAY_PATH_COLORS[i]} />;
         })}
       </div>
     </div>
