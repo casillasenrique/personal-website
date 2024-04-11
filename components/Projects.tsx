@@ -9,11 +9,34 @@ import vidaMigranteScreenshot from '../public/images/vida-migrante.png';
 import fortunaScreenshot from '../public/images/fortuna-screenshot.png';
 import spatialEquityScreenshot from '../public/images/spatial-equity.png';
 import deathPrescriptionScreenshot from '../public/images/death-prescription-screenshot.png';
+import migrantsMove from '../public/images/migrants-move.png';
+import copingDecisions from '../public/images/coping-decisions.png';
 import styles from '../styles/Projects.module.css';
 
 const Projects = () => {
   return (
     <div className={styles.projects}>
+      <ProjectCard
+        image={spatialEquityScreenshot}
+        projectUrl="http://spatialequity.nyc/"
+        title="Spatial Equity NYC"
+        key="Spatial Equity"
+      >
+        <p>
+          Spatial Equity NYC is an online tool visualizes key data in mobility,
+          environment, and health categories in New York City. The tool
+          indicates where spatial inequities are most prevalent and allows users
+          can compare their neighborhoods and see how community boards and
+          council districts rank amongst each other.
+        </p>
+        <p>
+          This project was developed as part of MIT's Leventhal Center for
+          Advanced Urbanism in collaboration with Transportation Alternatives. I
+          worked specifically with the Phase II refactor, using React, Redux,
+          Mapbox, Deck.gl, and Nebula.gl for implementing many different
+          features and fixing bugs from the first phase.
+        </p>
+      </ProjectCard>
       <ProjectCard
         image={vidaMigranteScreenshot}
         projectUrl="https://vidamigrante.migration.mit.edu/"
@@ -32,6 +55,43 @@ const Projects = () => {
           collaboration with the World Food Programme (WFP) using SvelteKit as
           the primary framework for developent. I helped lead the development
           side of the website by delegating tasks and triaging bugs.
+        </p>
+      </ProjectCard>
+      <ProjectCard
+        image={copingDecisions}
+        projectUrl="https://coping-decisions-before-migration.vercel.app/"
+        title="Household Vulnerability and Decision-Making in the Northern Triangle"
+        key="Coping Decisions"
+      >
+        <p>
+          This project is a game/simulation that allows users to step into the
+          shoes of Northern Triangle residents. The turn-based simulation allows
+          users to make coping strategy decisions based on the living conditions
+          that residents actually deal with, many of which relate to food
+          insecurity.
+        </p>
+        <p>
+          This project was developed as a team of 3 for MIT's 6.C85 Interactive
+          Data Visualization and Society course. The project is made using
+          SvelteKit, with visualizations created using D3.
+        </p>
+      </ProjectCard>
+      <ProjectCard
+        image={migrantsMove}
+        projectUrl="https://migrantsmove.migration.mit.edu/"
+        title="Migrants on the Move"
+        key="Migrants on the Move"
+      >
+        <p>
+          Migrants on the Move is a project that visualizes the risks of
+          migrants traveling from West Africa to Libya.
+        </p>
+        <p>
+          This project was developed as part of MIT's Civic Data Design Lab in
+          collaboration with the World Food Programme (WFP) and the
+          International Food Policy Research Institute (IFPRI) using Next.js as
+          the primary framework and D3 for web-based data visualizations. I
+          helped fix bugs and add new features for the release.
         </p>
       </ProjectCard>
       <ProjectCard
@@ -74,26 +134,6 @@ const Projects = () => {
           This project was developed as part of MIT's Civic Data Design Lab
           using Next.js and MongoDB as the primary tech stack, with Python being
           used heavily for data processing and analysis.
-        </p>
-      </ProjectCard>
-      <ProjectCard
-        image={spatialEquityScreenshot}
-        projectUrl="http://spatialequity.nyc/"
-        title="Spatial Equity NYC"
-        key="Spatial Equity"
-      >
-        <p>
-          Spatial Equity NYC is an online tool visualizes key data in mobility,
-          environment, and health categories in New York City. The tool
-          indicates where spatial inequities are most prevalent and allows users
-          can compare their neighborhoods and see how community boards and
-          council districts rank amongst each other.
-        </p>
-        <p>
-          This project was developed as part of MIT's Leventhal Center for
-          Advanced Urbanism in collaboration with Transportation Alternatives. I
-          worked specifically with the map, using React, Mapbox, Deck.gl, and
-          Nebula.gl for implementing different features.
         </p>
       </ProjectCard>
       <ProjectCard
@@ -157,7 +197,7 @@ const Projects = () => {
       <ProjectCard
         title="Family Separations Visualization"
         image={migrationVizScreenshot}
-        projectUrl="https://fangkelly.github.io/family-separations/"
+        projectUrl="https://kelflyang.github.io/family-separations/"
         key="Family Separations Visualization"
       >
         <p>
