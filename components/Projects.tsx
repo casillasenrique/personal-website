@@ -157,7 +157,7 @@ const Projects = () => {
       <ProjectCard
         title="Family Separations Visualization"
         image={migrationVizScreenshot}
-        projectUrl="https://fangkelly.github.io/family-separations/"
+        projectUrl="https://kelflyang.github.io/family-separations/"
         key="Family Separations Visualization"
       >
         <p>
