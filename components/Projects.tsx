@@ -1,21 +1,41 @@
-import React from 'react';
-import ProjectCard from './ProjectCard';
-import marcxScreenshot from '../public/images/marcx-screenshot.jpg';
-import fritterScreenshot from '../public/images/fritter-screenshot.jpg';
-import roundTableScreenshot from '../public/images/round-table-screenshot.jpg';
-import migrationVizScreenshot from '../public/images/migration-viz-screenshot.jpg';
-import livingHeritageScreenshot from '../public/images/living-heritage-beirut.png';
-import vidaMigranteScreenshot from '../public/images/vida-migrante.png';
-import fortunaScreenshot from '../public/images/fortuna-screenshot.png';
-import spatialEquityScreenshot from '../public/images/spatial-equity.png';
-import deathPrescriptionScreenshot from '../public/images/death-prescription-screenshot.png';
-import migrantsMove from '../public/images/migrants-move.png';
-import copingDecisions from '../public/images/coping-decisions.png';
-import styles from '../styles/Projects.module.css';
+import React from "react";
+import ProjectCard from "./ProjectCard";
+import marcxScreenshot from "../public/images/marcx-screenshot.jpg";
+import fritterScreenshot from "../public/images/fritter-screenshot.jpg";
+import roundTableScreenshot from "../public/images/round-table-screenshot.jpg";
+import migrationVizScreenshot from "../public/images/migration-viz-screenshot.jpg";
+import livingHeritageScreenshot from "../public/images/living-heritage-beirut.png";
+import vidaMigranteScreenshot from "../public/images/vida-migrante.png";
+import fortunaScreenshot from "../public/images/fortuna-screenshot.png";
+import spatialEquityScreenshot from "../public/images/spatial-equity.png";
+import haveWeMetScreenshot from "../public/images/have-we-met.png";
+import deathPrescriptionScreenshot from "../public/images/death-prescription-screenshot.png";
+import migrantsMove from "../public/images/migrants-move.png";
+import copingDecisions from "../public/images/coping-decisions.png";
+import styles from "../styles/Projects.module.css";
 
 const Projects = () => {
   return (
     <div className={styles.projects}>
+      <ProjectCard
+        image={haveWeMetScreenshot}
+        projectUrl="https://www.havewemet.nyc/"
+        title="Have We Met"
+        key="Have We Met"
+      >
+        <p>
+          Have We Met is a fun in-person scavenger hunt game where you can learn
+          about all the different artwork offered by the Metropolitan Mueseum of
+          Art in New York. It uses a guessing-base game mechanic drawing
+          directly from the MET's API, and provides personalization by saving
+          your found artwork to a personal gallery.
+        </p>
+        <p>
+          This is a personal project developed in Typescript using Next.js,
+          Tailwind CSS, and the MET's API. The backend uses the
+          browser's local storage to store user data.
+        </p>
+      </ProjectCard>
       <ProjectCard
         image={spatialEquityScreenshot}
         projectUrl="http://spatialequity.nyc/"
@@ -122,7 +142,7 @@ const Projects = () => {
         key="Beirut"
       >
         <p>
-          In light of the 2020 port explosion in Beirut, Lebanon,{' '}
+          In light of the 2020 port explosion in Beirut, Lebanon,{" "}
           <i>Living Heritage Atlas</i> documents and visualizes Beirut's living
           heritage of artisanship by mapping its craftspeople and cataloging its
           crafts through an open-source database, viewable through an
